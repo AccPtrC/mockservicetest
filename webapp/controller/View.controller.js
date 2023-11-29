@@ -1,10 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+	"sap/m/ObjectListItem",
+	"sap/m/ObjectAttribute"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller) {
+    function (Controller, ObjectListItem, ObjectAttribute) {
         "use strict";
 
         return Controller.extend("odatamockservice.controller.View", {

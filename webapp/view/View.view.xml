@@ -6,21 +6,21 @@
 			<Button id="idButton" type="Emphasized" press=".onPress" text="{i18n>loadFirstItems}"/>
 		</headerContent>
 		<List id="list" items="{/Meetups}" noDataText="{i18n>noDataText}">
-					<items>
-						<ObjectListItem id="idObjListItem"
-							number="{
-								path: 'EventDate',
-								type: 'sap.ui.model.type.DateTime',
-								formatOptions: {
-									style: 'medium'
-								}
-							}"
-							title="{Title}">
-							<attributes>
-								<ObjectAttribute id="idObjAttribute" text="{Description}"/>
-							</attributes>
-						</ObjectListItem>
-					</items>
+			<items>
+				<ObjectListItem id="idObjListItem"
+					number="{
+					path: 'EventDate',
+					type: 'sap.ui.model.type.DateTime',
+					formatOptions: {
+						style: 'medium'
+						}
+					}"
+					title="{Title}">
+					<attributes>
+						<ObjectAttribute id="idObjAttribute" text="{Description}"/>
+					</attributes>
+				</ObjectListItem>
+			</items>
 		</List>
     </Page>
 </mvc:View>
